@@ -24,14 +24,9 @@
 
     <h1>Madlibs</h1>
 
-    <form action="/story">
-        <div class="prompts-container">
-            {% for prompt in prompts %}
-            <input name="{{ prompt }}" placeholder="{{ prompt }}">
-            {% endfor %}
-            <button>Submit</button>
-        </div>
-    </form>
+    <h1>Your Story</h1>
+    <p>{{ text }}</p>
+
     <script src="/static/script.js"></script>
 </body>
 
