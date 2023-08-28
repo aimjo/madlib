@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<h1>Madlibs</h1>
+
+<form action="/greet">
+    <input type="text" placeholder="Place" name="place">
+    <input type="text" placeholder="Noun" name="noun">
+    <input type="text" placeholder="Verb" name="verb">
+    <input type="text" placeholder="Adjective" name="adjective">
+    <input type="text" placeholder="Plural noun" name="plural-noun">
+    <button>Submit!</button>
+</form>
+
+{% endblock %}
